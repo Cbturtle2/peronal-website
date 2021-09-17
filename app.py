@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
@@ -25,3 +25,19 @@ def resume():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/proj/distinction')
+def distinction():
+    return render_template('proj/distinction.html')
+
+@app.route('/proj/LAACESProgManager')
+def laacesProgManager():
+    return render_template('proj/laacesProgManager.html')
+
+@app.route('/proj/LAACESProgAssistant')
+def laacesProgAssistant():
+    return render_template('proj/laacesProgAssistant.html')
+
+@app.route('/assets/<path:path>', methods=['GET'])
+def _send_static(path):
+    return send_from_directory('assets', path)
