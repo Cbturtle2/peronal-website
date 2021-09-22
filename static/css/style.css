@@ -1,14 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Roboto&family=Rubik:wght@300&display=swap');
+
 h1{
-	border: 2px #eee solid;
 	color: black;
 	text-align: center;
 	padding: 10px;
+	background-color: #c4ffe6;
+	font-family: 'Nunito', sans-serif;
+	font-size: 40px;
+}
+
+h2{
+	font-family: 'Rubik', sans-serif;
+}
+
+h3{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+}
+
+h4{
+	font-family: 'Rubik', sans-serif;
+}
+
+a{
+	color: #00b8fc;
 }
 
 p{
 	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
 }
 
 ul li{
 	font-size: 18px;
 }
+

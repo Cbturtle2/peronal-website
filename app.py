@@ -14,10 +14,6 @@ def projects():
 def jobs():
     return render_template('jobs.html')
 
-@app.route('/experience')
-def experience():
-    return render_template('experience.html')
-
 @app.route('/resume')
 def resume():
     return render_template('resume.html')
