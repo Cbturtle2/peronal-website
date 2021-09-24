@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Charles's Portfolio Website</title>
+	<h1>Personal Website</h1>
+</head>
+<body>
+	<center>
+    <h3><a href="/">Home</a>
+	<a href="/projects">Projects</a>
+	<a href="/jobs">Work Experience</a>
+	<a href="/resume">Resume</a>
+	<a href="/contact">Contact Me!</a></h3>
+	</center>
+    <h3><a href="https://github.com/Cbturtle2/personal-website">Github Link!</a></h3>
+    <p>This project was started out of a need for a hub to display all of my personal projects.
+        This website was written using HTML and CSS and deployed using flask, gunicorn, docker, and kubernetes
+        with webhooks setup to automatically update the website whenever I send a merge on github.
+    </p>
+</body>
+</html>
