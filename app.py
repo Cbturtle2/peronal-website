@@ -34,14 +34,6 @@ def laacesProgManager():
 def laacesProgAssistant():
     return render_template('proj/laacesProgAssistant.html')
 
-@app.route('/proj/personalwebsite')
-def personalwebsite():
-    return render_template('proj/personalwebsite.html')
-    
-@app.route('/proj/resumeproject')
-def resumeproject():
-    return render_template('proj/resumeproject.html')
-
 @app.route('/assets/<path:path>', methods=['GET'])
 def _send_static(path):
     return send_from_directory('assets', path)
